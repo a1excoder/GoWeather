@@ -24,7 +24,7 @@ def search():
 	else:
 
 		try:
-			params = {'APPID': api, 'q': ui.lineEdit.text(), 'units': 'metric'}
+			params = {'APPID': api, 'q': ui.lineEdit.text(), 'units': 'metric', 'lang': 'ru'}
 			result = requests.get(url, params=params)
 			weather = result.json()
 
